@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/main_page/slide1.jpg) center no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header_nav {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+
+    transition: color 0.2s linear;
+    position: relative;
+}
+
+
+.nav_link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fce38a;
+    top: 100%;
+    z-index: 1;
+    opacity: 0;
+
+    transition: opacity 0.2s linear;
+}
+
+.nav_link:hover {
+    color: #fce38a;
+}
+
+.nav_link:hover::after {
+    opacity: 1;
+}
+
+/* MAIN */
+
+.main_inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_title {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
+
+.main_title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 30px auto 30px;
+    
+}
+
+.main_suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.tagline {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+
+/* adaptation */
+
+@media (max-width: 1200px) {
+    
+}

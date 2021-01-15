@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/8_page/bcgrnd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background: linear-gradient(to top, #151515, #3bebff); */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+
+.section {
+    padding-top: 30px;
+}
+
+.header_section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.header_suptitle {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+}
+
+.header_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.header_title::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 20px auto;
+    border-radius: 3px;
+    background-color: #f38181;
+}
+
+.header_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+/* main */
+
+.works {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.works_col {
+    flex: 1;
+}
+
+.works_item {
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);       
+}
+
+.works_item:hover .works_img {
+    opacity: 0.2;
+}
+
+.works_item:hover .works_info {
+    opacity: 1;
+}
+
+.works_img { 
+    width: 100%;
+    display: block;
+    
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.works_info {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.2s linear;
+
+    transform: translate3d(0, -50%, 0);
+}
+
+.works_title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.works_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
