@@ -24,8 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* header */
@@ -240,4 +241,37 @@ h1, h2, h3, h4, h5, h6 {
   #ySlides {
     transition: all 1.2s ease-in-out;
 }
+
+/* adaptation */
+
+@media (max-width: 990px) {
+
+    .opinion {
+      display: block;
+    }
+    
+}
+
+@media (max-width: 770px) {
+
+  .item_img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .opinion_item {
+    padding: 0 40px 70px 80px;
+  }
+
+  .mySlides {
+    height: auto;
+  }
+    
+}
+
+@media (max-width: 575px) {
+
+
+
+  }
     

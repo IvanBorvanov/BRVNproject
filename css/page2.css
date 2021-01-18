@@ -10,7 +10,6 @@ body {
     background: url(../img/8_page/bcgrnd.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* justify-content: center;  */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER */
 
 .section {
-    padding: 30px 0 30px;
+    padding-top: 30px;
 }
 
 .header_section {
@@ -75,18 +74,20 @@ h1, h2, h3, h4, h5, h6 {
 /* MAIN */
 
 .about {
-    margin-top: 60px;
+    margin: 50px -15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .about_item {
-    flex: 1;
-    width: 100%;
-    max-width: 30%;
-    background-color: #95e1d3;
+    width: 33.3333%;
+    padding: 0 15px;  
+}
 
+.about_inner {
     position: relative;
+    background-color: #95e1d3;
 }
 
 .about_item:hover .about_img {
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to bottom, #f38181, #fce38a);
     height: auto;
     background-size: cover;
-    max-width: 250px;
+    max-width: 100%;
 
     transition: transform 0.2s linear;
 }
@@ -117,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 .about_img img {
     display: block;
     transition: opacity 0.2s linear;
-    background-size: cover;
     max-width: 100%;
 }
 
@@ -139,14 +139,25 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0, -50%, 0);
 }
 
+/* for adaptation >770xp text */
+.text_item_ad {
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+
+    display: none;
+}
+
 /* STATS */
 
 .footer {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: #95e1d3;
-    /* position: absolute; */
     width: 100%;
-    height: 100%;
+    position: absolute;
     bottom: 0;
     z-index: 1;
 }
@@ -178,4 +189,72 @@ h1, h2, h3, h4, h5, h6 {
 .stats_text {
     font-size: 10px;
     text-transform: uppercase;
+}
+
+/*adaptation*/
+
+@media (max-width: 990px) {
+
+   .stats_quantity {
+       font-size: 40px;
+   }
+
+   .about {
+    margin: 60px -15px 0;
+    justify-content: center;
+}
+
+.about_item {
+    width: 100%;
+    max-width: 311px;
+    margin-bottom: 30px;
+}
+
+.stats_item {
+    padding: 20px 5px;
+}
+
+.stats_text {
+    font-size: 10px;
+}
+
+.text_item_ad {
+    display: initial;
+}
+
+}
+
+@media (max-width: 770px) {
+
+    .section {
+        padding: 30px auto 0px;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .header_text {
+        font-size: 12px;
+    }
+
+    .about {
+        margin: 40px -15px 0;
+    }
+    
+    .stats_quantity {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+ 
+    .stats_quantity {
+        font-size: 20px;
+    }
+
+    .footer {
+        position: relative;
+    }
+
 }

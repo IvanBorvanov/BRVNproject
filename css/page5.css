@@ -24,14 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* header */
 
 .section {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .header_section {
@@ -165,6 +166,43 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-right-radius: 10px;
 }
 
+/* adaptation */
 
+@media (max-width: 990px) {
 
+    .wedo {
+        display: block;
+    }
 
+    .wedo_item_img {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .wedo_item_accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tablinks {
+        /* padding: 20px 10px; */
+    }
+
+    .tabcontent {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 770px) {
+    
+}
+
+@media (max-width: 575px) {
+
+    .tablinks_title {
+        font-size: 10px;
+    }
+    
+}

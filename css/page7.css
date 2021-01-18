@@ -25,9 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 830px;
+    max-width: 8350px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 25px;
 }
 
 /* header */
@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+ .col_block {
+     display: flex;
+ }
+
 .works_col {
     flex: 1;
 }
@@ -132,6 +136,65 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-size: 12px;
     font-style: italic;
+}
+
+/* adaptation */
+
+@media (max-width: 990px) {
+    
+    .works {
+        padding: 0 25px;
+    }
+
+    .works_col {
+        margin-bottom: 25px;
+    }
+    
+    .col_block {
+        display: block;
+    }
+
+    .works_item {
+        display: block;
+    }
+
+    /* .works_img {
+        opacity: 0.3;
+    } */
+
+    .works_info {
+        opacity: 1;
+        color: #f38181;
+    }
+
+    .works_title {
+        font-size: 25px;
+        text-shadow: #fff 0 0 20px;
+    }
+
+    .works_subtitle {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    
+    
+}
+
+@media (max-width: 575px) {
+
+    .works_title {
+        font-size: 15px;
+        text-shadow: #fff 0 0 20px;
+    }
+
+    .works_subtitle {
+        font-size: 15px;
+    }
+    
 }
 
 

@@ -24,8 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* header */
@@ -68,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 /* stories */
 .stories_section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -169,4 +171,84 @@ h1, h2, h3, h4, h5, h6 {
 .footer_item_like i {
     color: #95e1d3;
     padding-right: 5px;
+}
+
+/* adaptation */
+
+@media (max-width: 990px) {
+
+    .date_day {
+        font-size: 40px;
+    }
+
+    .date_month {
+        font-size: 20px;
+    }
+    
+    .stories_section {
+        display: block;
+    }
+
+    .stories_item {
+        position: static;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .stories_img {
+        width: 100%;
+    }
+
+    .stories_title {
+        font-size: 25px;
+    }
+
+    .stories_text {
+        font-size: 20px;
+    }
+
+    .footer_item {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    
+    .date_day {
+        font-size: 35px;
+    }
+
+    .date_month {
+
+    }
+    
+    .stories_title {
+        font-size: 22px;
+    }
+
+    .stories_text {
+        font-size: 20px;
+    }
+
+    .footer_item {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    
+    .stories_title {
+        font-size: 20px;
+    }
+
+    .stories_text {
+        font-size: 16px;
+    }
+
+    .footer_item {
+        font-size: 15px;
+    }
+
 }

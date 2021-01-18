@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/page1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>MoGo Progect</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <div class="header_inner">
                 <div class="header_logo">MoGo</div>
 
-                <div class="header_nav">
+                <div class="nav" id="nav">
                     <a class="nav_link" href="Page2aboutus.html">about</a>
                     <a class="nav_link" href="Page3services.html">service</a>
                     <a class="nav_link" href="Page6team.html">team</a>
@@ -24,9 +25,13 @@
                     <a class="nav_link" href="Page9.html">blog</a>
                     <a class="nav_link" href="Page8clients.html">feedback</a>
                     <a class="nav_link" href="Page10contact.html">contact</a>
-                    <a class="nav_link" href="#"><img src="img/main_page/SHOPPING_CART.png"></a>
-                    <a class="nav_link" href="#"><img src="img/main_page/MAGNIFYING_GLASS.png"></a>
+                    <a class="nav_link" href="#"><i class="fas fa-shopping-cart nav_icon"></i>shop</a>
+                    <a class="nav_link" href="#"><i class="fas fa-search nav_icon"></i>search</a>
                 </div>
+
+                <button class="nav_toggle" id="nav_toggle" type="button">
+                    <span class="nav_toggle_item">Menu</span>
+                </button>
             </div>    
     </header>
     
@@ -50,5 +55,9 @@
             </div>
         </div>
     </footer>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="js/1page.js"></script>
+            
 </body>
 </html>

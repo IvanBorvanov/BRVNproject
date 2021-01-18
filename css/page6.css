@@ -25,8 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* header */
@@ -201,7 +202,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
 
+/* adaptation */
+
+@media (max-width: 990px) {
+    
+    .card {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .card_item {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    
+    
+}
+
+@media (max-width: 575px) {
+
+    .logos {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    
+    
 }
 
